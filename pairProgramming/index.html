@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    body {
+      margin: 0;
+    }
+    #main-container {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      background-color: white;
+      border: 2px solid black;
+      text-align: center;
+    }
+    #top-container {
+      /* width: 100vw; */
+      height: 30%;
+      background-color: red;
+    }
+    #bottom-container {
+      height: 100vh;
+      background-color: blue;
+      display: flex;
+      flex-direction:row;
+      
+    }
+    /* #mid-container {
+      width: 50vw;
+      height: 200px;
+      position: absolute;
+      z-index: 1;
+      top: 350px;
+      background-color: green;
+    } */
+    h1{
+        margin: 0;
+    }
+    .left-container{
+        width: 50%;
+        height: 100%;
+        background-color: aqua;
+    }
+    .right-container{
+    width: 50%;
+        height: 100%;
+        background-color:orange;
+    }
+    #left-contents{
+        font-size: 10px;
+    }
+    .left-contents{
+        font-size: 30px !important;
+    }
+    .todolist-left-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 30px;
+    }
+    .left-container-subContents{
+        display: flex;
+        
+    }
+    textarea{
+        height: 200px;
+        resize: none;
+        
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="top-container">
+        <h1 class="title">todos</h1>
+      </div>
+      <div id="bottom-container">
+        <div class="left-container">
+            <div class="left-contents" id="left-contents" >
+                <div class="todolist-left-container">
+                    <div class="left-container-subContents">
+                        <input type="checkbox">
+                    
+                        <div>첫번째 할일</div>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined">
+                            close
+                            </span>    
+                    </div>
+                    
+                        
+                        
+                        
+
+                    
+                </div>
+    
+                
+            </div>
+            
+        </div>
+        <div class="right-container">
+            <div class="right-container-subContents">
+                <textarea></textarea>
+                <button>추가</button>
+            </div>
+
+            </div>
+        </div>
+        
+      </div>
+      </div>
+    </div>
+  </body>
+  <!-- <script src="https://kit.fontawesome.com/cbcad42a26.js" crossorigin="anonymous"></script> -->
+</html>
