@@ -107,8 +107,8 @@
         </div>
         <div class="right-container">
             <div class="right-container-subContents">
-                <textarea></textarea>
-                <button>추가</button>
+                <input onchange='showInputValue(this.value)' class="todoInput"></input>
+                <button id="btn">추가</button>
             </div>
 
             </div>
@@ -118,5 +118,22 @@
       </div>
     </div>
   </body>
-  <!-- <script src="https://kit.fontawesome.com/cbcad42a26.js" crossorigin="anonymous"></script> -->
+  <script>
+  
+
+
+
+    const todoInput=document.querySelector('.todoInput');
+  console.log('todoInput==>',todoInput)
+    const addBtn=document.getElementById('btn');
+   addBtn.addEventListener('click',function(){
+    console.log('야호')
+   });
+   function showInputValue(text){
+    console.log('text===>',text)
+   }
+  //  todoInput.addEventListener('input',function(e){
+      
+  //  });
+  </script>
 </html>
